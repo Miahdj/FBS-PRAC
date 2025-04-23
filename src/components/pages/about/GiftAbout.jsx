@@ -1,0 +1,21 @@
+import React from "react";
+
+const GiftAbout = () => {
+  return (
+    <section className="py-16 bg-gray-100 text-center mt-20 md:pt-20">
+      <h4 className="text-orange-500 text-xs  uppercase mb-2">
+        Every Gift Counts
+      </h4>
+      <h2 className="text-3xl text-gray-800 leading-tight mb-6 font-semibold">
+        Together, We Make a Difference
+      </h2>
+      <p className="max-w-xl mx-auto text-gray-600 text-sm">
+        Together, we lend a helping hand to those in need, offering hope and
+        support where it's needed most. From volunteering our time to donating
+        resources, each act of kindness strengthens our community fabric.
+      </p>
+    </section>
+  );
+};
+
+export default GiftAbout;
