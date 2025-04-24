@@ -37,7 +37,7 @@ const ModalSponsor = ({ child, onClose }) => {
 
         {/* Modal Content */}
         <div className="p-6 space-y-2">
-          <p className="text-sm">Choose amount</p>
+          <p className="text-sm text-primary">Choose amount</p>
           <div className="grid grid-cols-2 gap-2">
             {[20, 40, 50, 80, 100, 200, 400].map((amount) => (
               <label
@@ -70,8 +70,8 @@ const ModalSponsor = ({ child, onClose }) => {
             ))}
           </div>
 
-          <div className="mt-4">
-            <label className="block text-sm font-medium text-gray-700">
+          <div className="mt-4 ">
+            <label className="block text-sm font-medium text-primary">
               Frequency<span className="text-red-500">*</span>
             </label>
             <select
@@ -85,12 +85,16 @@ const ModalSponsor = ({ child, onClose }) => {
           </div>
 
           <div>
-            <label className="block text-sm font-medium">Remarks</label>
+            <label className="block text-sm font-medium text-primary">
+              Remarks
+            </label>
             <textarea className="w-full border rounded p-2 mt-1" />
           </div>
 
           <div>
-            <label className="block text-sm font-medium">Email</label>
+            <label className="block text-sm font-medium text-primary">
+              Email
+            </label>
             <input type="email" className="w-full border rounded p-2 mt-1" />
           </div>
 

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ModalSponsor from "../../../partials/modal/ModalSponsor";
 
 const childrens = [
   {
     name: "Trixie Mae N",
-    sponsored: "37.50% ",
+    sponsored: "37.50%",
     img: "https://facethechildren.org/images/trixie.jpg",
+    age: "12",
+    birthday: "Jul 3, 2013",
+    story:
+      "John Luke, or JL, as he is called by his friends was neglected and then abandoned by his parents.  When the mother and father separated JL and his siblings were in the care of their mother.  The mother went to work overseas and left them in the care of another man who abandoned them.  The mother does not respond to contact.  JL is enrolled in grade 3 at Frontline Christian Academy and is interacting well within Face the Children.",
   },
   {
     name: "Danica V",
@@ -42,21 +47,6 @@ const childrens = [
     sponsored: "57.50%",
     img: "https://facethechildren.org/images/opt-gladays.jpg",
   },
-  {
-    name: "Julie Ann T",
-    sponsored: "60.00%",
-    img: "https://facethechildren.org/images/julieann.jpg",
-  },
-  {
-    name: "Mark John B",
-    sponsored: "85.00%",
-    img: "https://facethechildren.org/images/opt-mark.jpg",
-  },
-  {
-    name: "Marian Nhicole B",
-    sponsored: "100.00%",
-    img: "https://facethechildren.org/images/opt-marian.jpg",
-  },
 ];
 
 const ChildGridSecond = () => {
@@ -91,9 +81,15 @@ const ChildGridSecond = () => {
                       Sponsor →
                     </button>
                   </div>
-                  <a href="#" className="text-orange-300 text-xs">
+                  <Link
+                    to={{
+                      pathname: "/child-info-output",
+                    }}
+                    state={{ child: childs }}
+                    className="text-orange-300 text-xs"
+                  >
                     View Info
-                  </a>
+                  </Link>
                 </div>
               </div>
 
