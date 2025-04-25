@@ -17,14 +17,12 @@ const Login = () => {
     setSubmitted(true);
 
     if (!email || !password) return;
-
-    // proceed with login logic...
   };
 
   return (
     <div className="min-h-screen flex items-start justify-center bg-white px-4 py-20 sm:px-6 lg:px-8">
       <div
-        className="w-full max-w-md sm:max-w-sm text-center"
+        className="w-[350px] max-w-md sm:max-w-sm text-center"
         style={{ transform: "translateY(clamp(5rem, 12vw, 8rem))" }}
       >
         <img
@@ -39,7 +37,6 @@ const Login = () => {
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-6 w-full">
-            {/* Email */}
             <div className="relative w-full">
               <input
                 type="email"
@@ -57,7 +54,6 @@ const Login = () => {
               )}
             </div>
 
-            {/* Password */}
             <div className="relative w-full">
               <input
                 type={showPassword ? "text" : "password"}
@@ -86,7 +82,6 @@ const Login = () => {
               )}
             </div>
 
-            {/* Submit Button */}
             <button
               type="submit"
               className="w-full !mt-10 text-xs bg-primary text-white font-semibold py-2 rounded-md hover:bg-blue-400 transition"

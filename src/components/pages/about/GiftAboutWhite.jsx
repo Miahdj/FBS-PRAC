@@ -2,7 +2,7 @@ import React from "react";
 
 const GiftAbout = () => {
   return (
-    <section className="py-16 bg-gray-100 text-center mt-20 md:pt-20">
+    <section className="py-16 bg-white text-center mt-20 md:pt-20">
       <h4 className="text-orange-500 text-xs  uppercase mb-2">
         Every Gift Counts
       </h4>

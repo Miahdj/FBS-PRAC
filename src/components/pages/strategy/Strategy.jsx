@@ -3,9 +3,10 @@ import Header from "../home/header";
 
 import Strategy1 from "./Strategy1";
 import Strategy2 from "./Strategy2";
-import GiftAbout from "../about/GiftAbout";
+
 import Footer from "../home/footer";
 import Navigation from "../home/Navigation";
+import GiftAbout from "../about/GiftAboutWhite";
 
 const Strategy = () => {
   return (

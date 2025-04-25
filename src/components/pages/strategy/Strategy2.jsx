@@ -7,8 +7,9 @@ const Strategy2 = () => {
         <div className="md:mt-[-230px]">
           {" "}
           <img
-            src="https://facethechildren.org/images/website/s-love.webp"
-            alt=""
+            src="./public/image/strategy/s-love.webp"
+            className="mt-[50px]"
+            alt="Love Never Fails Image"
           />
         </div>
         <div>

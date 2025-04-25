@@ -22,6 +22,13 @@ const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/strategy" element={<Strategy />} />
+        <Route path="/sponsor-child" element={<SponsorSection />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/donate" element={<Donate />} />
         <Route path="/child-info-output/" element={<ChildInfoOutput />} />
         <Route path="/general-donation" element={<GeneralDonation />} />
         <Route path="/feeding-program" element={<FeedingProgram />} />
@@ -30,16 +37,9 @@ const App = () => {
         <Route path="/create-account" element={<CreateAccount />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/strategy" element={<Strategy />} />
-        <Route path="/sponsor-child" element={<SponsorSection />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/donate" element={<Donate />} />
       </Routes>
     </Router>
   );
 };
-
+  
 export default App;

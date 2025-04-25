@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../home/header";
-
 import BannerAbout from "./BannerAbout";
 import VisionAbout from "./VisionAbout";
 import MissionAbout from "./MissionAbout";
@@ -16,9 +15,7 @@ const About = () => {
       <BannerAbout />
       <VisionAbout />
       <MissionAbout />
-
       <GiftAbout />
-
       <Footer />
     </div>
   );

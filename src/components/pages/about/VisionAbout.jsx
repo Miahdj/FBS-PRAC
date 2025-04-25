@@ -17,7 +17,7 @@ const VisionAbout = () => {
 
       <div className="mb-12 md:mb-0 md:w-3/5">
         <img
-          src="https://facethechildren.org/images/website/about-vision.webp"
+          src="./public/image/about/about-vision.webp"
           alt="Children Graphic"
           className=""
         />

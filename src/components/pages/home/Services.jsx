@@ -25,8 +25,8 @@ const Services = () => {
 
       <div className="mb-12 md:mb-0">
         <img
-          src="https://facethechildren.org/images/website/h-service.webp"
-          alt="Children Graphic"
+          src="./public/image/home/h-service.webp"
+          alt="Service Image"
           className="max-w-full h-auto"
         />
       </div>

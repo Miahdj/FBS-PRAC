@@ -2,7 +2,7 @@ import React from "react";
 
 const FaqQuestions2 = () => {
   return (
-    <div className="bg-gray-50 mt-16 py-10 px-4">
+    <div className="bg-gray-100 mt-16 py-10 px-4">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
         <div className="mr-20">
           <small className="text-sm text-orange-400 uppercase mb-2">
@@ -18,7 +18,6 @@ const FaqQuestions2 = () => {
         </div>
 
         <form className="space-y-4">
-          {/* Input fields */}
           {["Name", "Email", "Phone", "Subject"].map((label, i) => (
             <div key={i} className="relative w-full">
               <input

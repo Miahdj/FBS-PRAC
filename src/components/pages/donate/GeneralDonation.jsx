@@ -3,7 +3,7 @@ import Header from "../home/header";
 import Navigation from "../home/Navigation";
 import GiftAbout from "../about/GiftAbout";
 import Footer from "../home/footer";
-import DonateModal from "../../../partials/modal/ModalDonor"; // ✅ Ensure this path is correct
+import DonateModal from "../../../partials/modal/ModalDonor";
 
 const GeneralDonation = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,21 +31,22 @@ const GeneralDonation = () => {
                 </div>
               </div>
               <p className="mt-3 text-gray-600 text-sm">
-                Weekly Community Development Programs (CDP) in impoverished
-                communities. These gatherings consist of providing a meal for
-                the children, story-telling, games, assistance with homework,
-                and gift-giving when possible.
+                Give unrestricted gifts that allow Frontline to direct these
+                funds where they are most needed. Your giving allows us to
+                continue to actively partner with needs of people in the
+                communities we serve.
               </p>
               <button
                 className="mt-9 inline-block px-4 py-2 text-white text-sm bg-primary rounded-md hover:bg-blue-600 transition"
                 onClick={() => setShowModal(true)}
               >
-                Donate Now
+                Sponsor Now
               </button>
             </div>
           </div>
         </div>
       </div>
+      <div className="bg-white  py-14"></div>
 
       <GiftAbout />
       <Footer />

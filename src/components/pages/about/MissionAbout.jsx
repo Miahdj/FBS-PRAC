@@ -3,15 +3,10 @@ import React from "react";
 const MissionAbout = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between px-6 py-20 max-w-7xl mx-auto gap-11">
-      {/* for image first on mobile view */}
       <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
-        <img
-          src="https://facethechildren.org/images/website/about-mission.webp"
-          alt=""
-        />
+        <img src="./public/image/about/about-mission.webp" alt="" />
       </div>
 
-      {/* Text section */}
       <div className="max-w-xl md:ml-12 md:w-1/2">
         <h4 className="text-orange-500 text-sm font-medium uppercase">
           Mission

@@ -3,9 +3,10 @@ import Header from "../home/header";
 
 import FaqQuestions from "./FaqQuestions";
 import FaqQuestions2 from "./FaqQuestions2";
-import GiftAbout from "../about/GiftAbout";
+
 import Footer from "../home/footer";
 import Navigation from "../home/Navigation";
+import GiftAbout from "../about/GiftAboutWhite";
 
 const Faq = () => {
   return (

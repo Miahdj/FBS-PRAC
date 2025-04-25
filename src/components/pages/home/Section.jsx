@@ -5,8 +5,8 @@ const Section = () => {
     <section className="flex flex-col md:flex-row items-center justify-between px-6 py-20 max-w-7xl mx-auto">
       <div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
         <img
-          src="https://facethechildren.org/images/website/h-about.webp"
-          alt="img3"
+          src="./public/image/home/h-about.webp"
+          alt="About image"
           className="w-100 max-w-lg md:max-w-xl rounded-lg"
         />
       </div>

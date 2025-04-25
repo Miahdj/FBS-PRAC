@@ -5,8 +5,8 @@ const BannerAbout = () => {
     <section className="flex flex-col md:flex-row items-center justify-between px-6 py-20 max-w-7xl mx-auto gap-11 mt-10">
       <div className="w-full md:w-3/4 flex justify-center mb-10 md:mb-0">
         <img
-          src="https://facethechildren.org/images/website/about-banner.webp"
-          alt=""
+          src="./public/image/about/about-banner.webp"
+          alt="About Banner"
           className=""
         />
       </div>

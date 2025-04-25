@@ -6,7 +6,7 @@ const children = [
   {
     name: "John Luke B",
     sponsored: "0.00%",
-    img: "https://facethechildren.org/images/John-luke-b.jpg",
+    img: "./public/image/sponsor-child/resident/John-Luke-b.jpg",
     age: "12",
     birthday: "Jul 3, 2013",
     story:
@@ -16,7 +16,7 @@ const children = [
   {
     name: "Ala D",
     sponsored: "5.00%",
-    img: "https://facethechildren.org/images/ala-d.jpg",
+    img: "./public/image/sponsor-child/resident/ala-d.jpg",
     age: "12",
     birthday: "Jun 27, 2013",
     story:
@@ -26,7 +26,7 @@ const children = [
   {
     name: "Angelita A - Special Education",
     sponsored: "5.00%",
-    img: "https://facethechildren.org/images/opt-angelica.jpg",
+    img: "./public/image/sponsor-child/resident/opt-angelica.jpg",
     age: "33",
     birthday: "Jun 6, 1992",
     story:
@@ -36,7 +36,7 @@ const children = [
   {
     name: "Minos D",
     sponsored: "5.00%",
-    img: "https://facethechildren.org/images/minos-d (1).jpg",
+    img: "./public/image/sponsor-child/resident/minos-d (1).jpg",
     age: "11",
     birthday: "Oct 14, 2014",
     story:
@@ -219,7 +219,7 @@ const ChildGrid = () => {
 
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-3">
         {children.map((child, index) => {
           const sponsoredPercent = parseFloat(child.sponsored.replace("%", ""));
 
@@ -234,12 +234,14 @@ const ChildGrid = () => {
                   alt={child.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white p-3 z-10">
+                <div className="absolute bottom-0 left-0 w-full bg-black/20 text-white p-1 z-10">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-sm font-semibold">{child.name}</h3>
+                    <h3 className="text-sm font-semibold leading-none">
+                      {child.name}
+                    </h3>
                     <button
                       onClick={() => setSelectedChild(child)}
-                      className="bg-primary hover:bg-blue-500 text-white px-3 py-1 rounded text-xs"
+                      className="bg-primary hover:bg-blue-500 text-white px-4 py-2 rounded text-xs whitespace-nowrap"
                     >
                       Sponsor →
                     </button>
@@ -256,12 +258,12 @@ const ChildGrid = () => {
                 </div>
               </div>
 
-              <div className="relative w-full h-7 bg-orange-300">
+              <div className="relative w-full h-10 bg-[#ffbd66] ">
                 <div
-                  className="absolute top-0 left-0 h-full bg-orange-500"
+                  className="absolute top-0 left-0 h-full bg-[#eb8500]"
                   style={{ width: `${sponsoredPercent}%` }}
                 ></div>
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-semibold text-sm z-10">
+                <div className="absolute top-0 left-0 w-full h-full flex items-center ml-2 text-white font-semibold text-sm z-10">
                   {child.sponsored} - Sponsored
                 </div>
               </div>

@@ -12,7 +12,7 @@ const ChildInfoOutput = () => {
   const child = location.state?.child;
     
   if (!child) {
-    // Redirect back to the grid if no child data is passed
+    
     navigate("/");
     return null;
   }
@@ -26,7 +26,7 @@ const ChildInfoOutput = () => {
       <div className="flex-grow pb-[128px]">
         <div className="flex flex-col sm:flex-row justify-center p-6 bg-white mt-10 ">
           <div className="flex flex-col sm:flex-row max-w-4xl">
-            {/* Image and Progress Bar */}
+            
             <div className="flex flex-col items-center sm:items-start">
               <img src={child.img} alt={child.name} className="w-64 h-auto" />
               <div className="relative w-64 h-7 bg-orange-300 mt-0">
@@ -39,7 +39,7 @@ const ChildInfoOutput = () => {
                 </div>
               </div>
             </div>
-            {/* Text Content */}
+          
             <div className="mt-6 sm:mt-0 sm:ml-6">
               <div>
                 <h2 className="text-2xl font-semibold text-gray-600 mt-5">

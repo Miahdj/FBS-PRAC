@@ -39,6 +39,7 @@ const ChildSponsorshipInfo = () => {
           </div>
         </div>
       </div>
+      <div className="bg-white  py-10"></div>
       <GiftAbout />
       <Footer />
     </div>

@@ -11,29 +11,28 @@ const Associates = () => {
       </h2>
 
       <div className="flex flex-wrap justify-center items-center gap-10 px-6">
-        {/* Placeholder images – replace src with actual logo URLs */}
         <img
-          src="https://facethechildren.org/images/website/logo-fwc.png"
+          src="./public/image/home/logo-fwc.png"
           alt="Affiliate 1"
           className="h-16 object-contain grayscale"
         />
         <img
-          src="https://facethechildren.org/images/website/logo-fbs.png"
+          src="./public/image/home/logo-fbs.png"
           alt="Affiliate 2"
           className="h-16 object-contain grayscale"
         />
         <img
-          src="https://facethechildren.org/images/website/logo-fca.png"
+          src="./public/image/home/logo-fca.png"
           alt="Affiliate 3"
-          className="h-16 object-contain grayscale"
+          className="object-contain grayscale"
         />
         <img
-          src="https://facethechildren.org/images/website/logo-ftw.png"
+          src="./public/image/home/logo-ftw.png"
           alt="Affiliate 4"
-          className="h-16 object-contain grayscale"
+          className=" object-contain grayscale"
         />
         <img
-          src="https://facethechildren.org/images/website/logo-pfm.png"
+          src="./public/image/home/logo-pfm.png"
           alt="Affiliate 5"
           className="h-16 object-contain grayscale"
         />

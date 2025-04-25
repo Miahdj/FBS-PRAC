@@ -22,7 +22,7 @@ const Contact1 = () => {
   return (
     <div className="bg-white py-10">
       <div className="max-w-7xl mx-auto px-4 md:grid md:grid-cols-2 md:items-start gap-10">
-        {/* Left Column */}
+       
         <div>
           <small className="text-sm text-orange-500 uppercase">
             Let's Talk
@@ -64,7 +64,6 @@ const Contact1 = () => {
           </p>
         </div>
 
-      
         <form className="space-y-6 w-full max-w-xl mx-auto md:self-start">
           {["Name", "Email", "Phone", "Subject"].map((label, i) => (
             <div key={i} className="relative w-full">

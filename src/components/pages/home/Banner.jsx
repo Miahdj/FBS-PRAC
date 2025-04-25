@@ -20,8 +20,8 @@ const Banner = () => {
 
         <div className="mt-12 md:mt-0">
           <img
-            src="https://facethechildren.org/images/website/h-banner.webp"
-            alt="Children Graphic"
+            src="./public/image/home/h-banner.webp"
+            alt="Ftc Children"
             className="max-w-full h-auto"
           />
         </div>

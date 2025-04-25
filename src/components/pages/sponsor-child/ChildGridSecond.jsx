@@ -6,7 +6,7 @@ const childrens = [
   {
     name: "Trixie Mae N",
     sponsored: "37.50%",
-    img: "https://facethechildren.org/images/trixie.jpg",
+    img: "./public/image/sponsor-child/non-resident/trixie.jpg",
     age: "12",
     birthday: "Jul 3, 2013",
     story:
@@ -15,17 +15,17 @@ const childrens = [
   {
     name: "Danica V",
     sponsored: "40.00%",
-    img: "https://facethechildren.org/images/danica.jpg",
+    img: "./public/image/sponsor-child/non-resident/danica.jpg",
   },
   {
     name: "Rose Mae N",
     sponsored: "40.00%",
-    img: "https://facethechildren.org/images/rosemae.jpg",
+    img: "./public/image/sponsor-child/non-resident/rosemae.jpg",
   },
   {
     name: "Rachelle M",
     sponsored: "42.00%",
-    img: "https://facethechildren.org/images/opt-rachelle.jpg",
+    img: "./public/image/sponsor-child/non-resident/opt-rachelle.jpg",
   },
   {
     name: "Richard T",
@@ -54,7 +54,7 @@ const ChildGridSecond = () => {
 
   return (
     <div className="px-4 py-8 max-w-7xl mx-auto">
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-3">
         {childrens.map((childs, index) => {
           const sponsoredPercent = parseFloat(
             childs.sponsored.replace("%", "")
@@ -71,12 +71,14 @@ const ChildGridSecond = () => {
                   alt={childs.name}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white p-3 z-10">
+                <div className="absolute bottom-0 left-0 w-full bg-black/20 text-white p-1 z-10">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-sm font-semibold">{childs.name}</h3>
+                    <h3 className="text-sm font-semibold leading-none">
+                      {childs.name}
+                    </h3>
                     <button
                       onClick={() => setSelectedChild(childs)}
-                      className="bg-primary hover:bg-blue-500 text-white px-3 py-1 rounded text-xs"
+                      className="bg-primary hover:bg-blue-500 text-white px-4 py-2 rounded text-xs whitespace-nowrap"
                     >
                       Sponsor →
                     </button>
@@ -93,12 +95,12 @@ const ChildGridSecond = () => {
                 </div>
               </div>
 
-              <div className="relative w-full h-7 bg-orange-300">
+              <div className="relative w-full h-10 bg-[#ffbd66]">
                 <div
-                  className="absolute top-0 left-0 h-full bg-orange-500"
+                  className="absolute top-0 left-0 h-full bg-[#eb8500]"
                   style={{ width: `${sponsoredPercent}%` }}
                 ></div>
-                <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white font-semibold text-sm z-10">
+                <div className="absolute top-0 left-0 w-full h-full flex items-center ml-2 text-white font-semibold text-sm z-10">
                   {childs.sponsored} - Sponsored
                 </div>
               </div>

@@ -5,7 +5,7 @@ const ModalSponsor = ({ child, onClose }) => {
 
   useEffect(() => {
     if (child) {
-      setTimeout(() => setIsVisible(true), 10); // Small delay to trigger transition
+      setTimeout(() => setIsVisible(true), 10);
     } else {
       setIsVisible(false);
     }
@@ -21,13 +21,12 @@ const ModalSponsor = ({ child, onClose }) => {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         }`}
       >
-        {/* Name header with blue background */}
         <div className="bg-primary text-white py-3 px-4 flex justify-between items-center">
           <h2 className="text-lg font-semibold">Sponsor {child.name}</h2>
           <button
             onClick={() => {
               setIsVisible(false);
-              setTimeout(onClose, 300); // Wait for animation before closing
+              setTimeout(onClose, 300);
             }}
             className="text-white text-xl font-bold hover:opacity-80"
           >
@@ -35,7 +34,6 @@ const ModalSponsor = ({ child, onClose }) => {
           </button>
         </div>
 
-        {/* Modal Content */}
         <div className="p-6 space-y-2">
           <p className="text-sm text-primary">Choose amount</p>
           <div className="grid grid-cols-2 gap-2">

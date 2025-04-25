@@ -8,7 +8,6 @@ const ChildGridWrapper = () => {
 
   return (
     <div className="px-4 py-3 max-w-7xl mx-auto ">
-      {/* Toggle */}
       <div className="flex justify-center mb-8 mt-20">
         <div className="flex space-x-10 relative">
           <button
@@ -43,7 +42,6 @@ const ChildGridWrapper = () => {
         </div>
       </div>
 
-      {/* Conditional render */}
       {activeTab === "resident" ? <ChildGrid /> : <ChildGridSecond />}
     </div>
   );

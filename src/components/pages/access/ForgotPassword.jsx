@@ -14,7 +14,7 @@ const ForgotPassword = () => {
 
   return (
     <div className="min-h-screen flex items-start pt-[170px] justify-center bg-white px-4 py-10 sm:px-6 lg:px-8">
-      <div className="w-full max-w-md sm:max-w-sm text-center">
+      <div className="w-[360px] max-w-md sm:max-w-sm text-center">
         <img
           src="http://localhost:5173/src/assets/ftc_svg_logo.svg"
           alt="Face the Children Logo"
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
             FORGOT PASSWORD
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6 w-full">
+          <form onSubmit={handleSubmit} className="space-y-6 w-full mt-6">
             <div className="relative w-full">
               <input
                 type="email"

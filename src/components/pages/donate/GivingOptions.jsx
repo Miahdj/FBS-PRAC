@@ -10,11 +10,11 @@ const GivingOptions = () => {
 
   return (
     <>
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-3 mt-20">
+          <div className="flex flex-wrap justify-center gap-3 mt-20 ">
             {/* Card 1 */}
-            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72 h-auto sm:h-[700px]">
+            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72 !h-[600px] sm:h-[700px]">
               <img
                 src={givingOptions[0].image}
                 alt={givingOptions[0].title}
@@ -50,7 +50,7 @@ const GivingOptions = () => {
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72 h-auto sm:h-[700px]">
+            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72  !h-[600px] sm:h-[700px]">
               <img
                 src={givingOptions[1].image}
                 alt={givingOptions[1].title}
@@ -86,7 +86,7 @@ const GivingOptions = () => {
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72 h-auto sm:h-[700px]">
+            <div className="bg-white shadow rounded overflow-hidden flex flex-col w-full sm:w-72 !h-[600px] sm:h-[700px]">
               <img
                 src={givingOptions[2].image}
                 alt={givingOptions[2].title}

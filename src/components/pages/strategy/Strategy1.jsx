@@ -6,7 +6,7 @@ const Strategy1 = () => {
       <div className="flex justify-center w-full md:order-1 lg:order-2">
         <img
           className=""
-          src="https://facethechildren.org/images/website/s-banner.webp"
+          src="./public/image/strategy/s-banner.webp"
           alt="FTC Banner Quote"
         />
       </div>

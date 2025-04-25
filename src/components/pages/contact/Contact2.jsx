@@ -1,4 +1,3 @@
-// Contact2.jsx
 import React from "react";
 
 const team = [
@@ -6,19 +5,19 @@ const team = [
     name: "Judea Delos Santos",
     role: "Communication & Development Staff",
     email: "judeadelossantos@thefrontline.asia",
-    img: "https://facethechildren.org/images/website/team-judea.webp",
+    img: "./public/image/contact/team-judea.webp",
   },
   {
     name: "Michael Gordon",
     role: "Spiritual Director",
     email: "mike.gordon@thefrontline.asia",
-    img: "https://facethechildren.org/images/website/team-mike.webp",
+    img: "./public/image/contact/team-mike.webp",
   },
   {
     name: "John Katigbak",
     role: "Managing Director",
     email: "john.katigbak@thefrontline.asia",
-    img: "https://facethechildren.org/images/website/team-jp.webp",
+    img: "./public/image/contact/team-jp.webp",
   },
 ];
 

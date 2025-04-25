@@ -5,12 +5,12 @@ const DonateModal = ({ onClose }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setIsVisible(true), 10); // Delay to trigger transition
+    setTimeout(() => setIsVisible(true), 10);
   }, []);
 
   const handleClose = () => {
     setIsVisible(false);
-    setTimeout(onClose, 300); // Delay unmounting for animation
+    setTimeout(onClose, 300);
   };
 
   return (
@@ -21,7 +21,6 @@ const DonateModal = ({ onClose }) => {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
         }`}
       >
-        {/* Modal Header */}
         <div className="bg-primary text-white py-3 px-4 flex justify-between items-center">
           <h2 className="text-lg font-semibold">General Donation</h2>
           <button
@@ -35,7 +34,7 @@ const DonateModal = ({ onClose }) => {
         <div className="p-6 space-y-4">
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-primary">
                 Designation<span className="text-red-500">*</span>
               </label>
               <select
@@ -49,7 +48,7 @@ const DonateModal = ({ onClose }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-primary">
                 Amount<span className="text-red-500">*</span>
               </label>
               <select
@@ -64,7 +63,7 @@ const DonateModal = ({ onClose }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-primary">
                 Frequency<span className="text-red-500">*</span>
               </label>
               <select
@@ -78,14 +77,14 @@ const DonateModal = ({ onClose }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-primary">
                 Remarks
               </label>
               <textarea className="w-full border rounded p-2 mt-1" rows="3" />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-700">
+              <label className="block text-sm font-medium text-primary">
                 Email
               </label>
               <input type="email" className="w-full border rounded p-2 mt-1" />
